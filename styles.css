@@ -229,3 +229,9 @@ nav a {
   }
 
 }
+.texto-pizza {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.5;
+}
