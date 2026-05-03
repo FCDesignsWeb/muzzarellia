@@ -217,3 +217,15 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
+/* 📱 AJUSTE TEXTO PORTADA EN CELULAR */
+@media (max-width: 768px) {
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 85%;
+    text-align: center;
+    top: 65%; /* 👈 lo baja un poco */
+  }
+
+}
