@@ -325,13 +325,13 @@ nav a:hover {
     scroll-snap-type: x mandatory;
   }
 
-  .galeria img {
-    min-width: 250px;
-    height: 250px;
-    object-fit: cover;
-    scroll-snap-align: center;
-    border-radius: 10px;
-  }
+ .galeria img {
+  min-width: 240px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: center;
+}
 
   .galeria::-webkit-scrollbar {
     display: none;
