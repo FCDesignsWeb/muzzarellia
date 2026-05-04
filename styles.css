@@ -254,22 +254,31 @@ nav a:hover {
     margin: 10px;
   }
 
+  /* ===== HERO ===== */
+
   .hero h1 {
     font-size: 22px;
-    top: 15%;
+    top: 16%;
+    width: 90%;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9);
   }
 
   .hero p {
     font-size: 14px;
-    top: 28%;
+    top: 30%;
+    width: 90%;
+    color: #eaeaea;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9);
   }
 
   .hero-btn {
     font-size: 14px;
     padding: 10px 15px;
     width: 85%;
-    top: 60%;
+    top: 58%;
   }
+
+  /* ===== SECCIONES ===== */
 
   .section {
     padding: 20px;
@@ -297,11 +306,15 @@ nav a:hover {
     padding: 0 10px;
   }
 
+  /* ===== IMÁGENES ===== */
+
   .section img {
     width: 100%;
     max-width: 280px;
     height: auto;
   }
+
+  /* ===== GALERÍA ===== */
 
   .galeria {
     display: flex;
@@ -324,10 +337,21 @@ nav a:hover {
   }
 }
 
-/* CHICO */
+/* ================= CHICO ================= */
+
 @media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
   .hero-btn {
     font-size: 13px;
+    width: 90%;
   }
 
   .banner {
