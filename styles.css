@@ -190,29 +190,35 @@ nav a:hover {
 }
 
 /* WHATSAPP */
-.whatsapp {
+.whatsapp, .instagram {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
-  color: white;
-  padding: 18px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 22px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
 }
 
-/* INSTAGRAM */
+.whatsapp {
+  bottom: 20px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+}
+
 .instagram {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background: #e1306c;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
+  bottom: 85px;
+  background: linear-gradient(135deg, #e1306c, #ff7a18);
+}
+
+.whatsapp:hover,
+.instagram:hover {
+  transform: scale(1.1);
 }
 
 /* 📱 MOBILE */
