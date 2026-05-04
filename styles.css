@@ -64,9 +64,11 @@ nav a:hover {
   color: var(--verde);
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
   position: relative;
+  overflow: hidden;
 }
 
 .hero img {
@@ -74,6 +76,7 @@ nav a:hover {
   display: block;
 }
 
+/* overlay */
 .hero::after {
   content: "";
   position: absolute;
@@ -81,46 +84,45 @@ nav a:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.2));
+  z-index: 1;
 }
 
+/* textos */
 .hero h1,
-.hero p {
+.hero p,
+.hero-btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
   z-index: 2;
+  text-align: center;
+  color: white;
 }
 
 .hero h1 {
-  top: 20%;
-  font-size: 36px;
+  top: 18%;
+  font-size: 32px;
   font-weight: 600;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 .hero p {
-  top: 35%;
-  font-size: 18px;
-  color: #ccc;
+  top: 32%;
+  font-size: 16px;
+  color: #ddd;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
-/* BOTÓN HERO */
+/* botón hero */
 .hero-btn {
-  position: absolute;
   top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
   padding: 15px 30px;
   font-size: 16px;
   border-radius: 30px;
-
+  background: linear-gradient(135deg, var(--verde), var(--verde-soft));
   color: black;
   font-weight: bold;
-  text-align: center;
-
-  background: linear-gradient(135deg, var(--verde), var(--verde-soft));
   box-shadow: 0 10px 25px rgba(126,217,87,0.4);
   transition: 0.3s;
 }
@@ -129,7 +131,8 @@ nav a:hover {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
-/* BOTONES */
+/* ================= BOTONES ================= */
+
 .btn {
   display: inline-block;
   margin: 20px;
@@ -147,7 +150,8 @@ nav a:hover {
   color: black;
 }
 
-/* SECCIONES */
+/* ================= SECCIONES ================= */
+
 .section {
   text-align: center;
   padding: 60px 30px;
@@ -189,7 +193,8 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* WHATSAPP */
+/* ================= BOTONES FLOTANTES ================= */
+
 .whatsapp, .instagram {
   position: fixed;
   right: 15px;
@@ -221,7 +226,18 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* 📱 MOBILE */
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
   header {
@@ -236,6 +252,16 @@ nav a:hover {
   nav a {
     display: inline-block;
     margin: 10px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    top: 15%;
+  }
+
+  .hero p {
+    font-size: 14px;
+    top: 28%;
   }
 
   .hero-btn {
@@ -254,18 +280,6 @@ nav a:hover {
     font-size: 16px;
   }
 
-  /* HERO TEXTO */
-  .hero h1 {
-    font-size: 22px;
-    top: 15%;
-  }
-
-  .hero p {
-    font-size: 14px;
-    top: 28%;
-  }
-
-  /* TEXTOS */
   .section h2 {
     font-size: 20px;
   }
@@ -283,14 +297,12 @@ nav a:hover {
     padding: 0 10px;
   }
 
-  /* IMÁGENES */
   .section img {
     width: 100%;
     max-width: 280px;
     height: auto;
   }
 
-  /* GALERÍA SCROLL */
   .galeria {
     display: flex;
     overflow-x: auto;
@@ -312,7 +324,7 @@ nav a:hover {
   }
 }
 
-/* 📱 CHICO */
+/* CHICO */
 @media (max-width: 480px) {
   .hero-btn {
     font-size: 13px;
@@ -321,13 +333,4 @@ nav a:hover {
   .banner {
     font-size: 12px;
   }
-}
-
-/* FOOTER */
-.footer {
-  background: #000;
-  color: #aaa;
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
 }
