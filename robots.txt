@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fcdesignsweb.github.io/muzzarellia/sitemap.xml
